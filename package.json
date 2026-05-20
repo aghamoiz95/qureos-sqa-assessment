@@ -1,0 +1,22 @@
+{
+  "name": "qureos-sqa-assessment",
+  "version": "1.0.0",
+  "description": "Playwright assessment suite for the Qureos guest candidate application flow.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=line,html",
+    "test:headed": "playwright test --headed",
+    "test:three": "npm run test && npm run test && npm run test",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "docx": "^9.6.1",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  }
+}
